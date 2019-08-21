@@ -20,7 +20,7 @@ class DecoderLSTM(nn.Module):
 
         out, hidden = self.lstm(out, hidden)
         out = self.fc(out)
-        out = self.softmax(out)
+        # out = self.softmax(out)
 
         return out, hidden
 

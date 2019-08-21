@@ -3,9 +3,6 @@
 import zipfile
 import tensorflow as tf
 import string
-import numpy as np
-import random
-
 
 def read_data(filename):
     f = zipfile.ZipFile(filename)
@@ -45,6 +42,14 @@ def id2char(dict_id):
 
 def str2id(s):
     return [char2id(c) for c in s]
+
+
+def id2string(list_c):
+    s = ''
+    for c in list_c:
+        s += id2char(c)
+
+    return s
 
 
 def reverse_word(word):
