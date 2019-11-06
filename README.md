@@ -23,4 +23,4 @@ python main.py
 python inference.py
 ```
 ## future works
-attention, world embedding (glove or word2vec)
+attention, word embedding (glove or bert)
