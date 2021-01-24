@@ -1,20 +1,20 @@
 # seq2seq
 ## description
-in this repo, I have written and refactored some code to mirror string using seq2seq model
+In this repo, I have written and refactored some code to mirror strings using the seq2seq model. For example, if the input is ABC, the ground-truth output is CBA.
 ## references
 + https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#sphx-glr-intermediate-seq2seq-translation-tutorial-py  
 + https://arxiv.org/abs/1409.3215  
 + https://github.com/vanhuyz/udacity-dl/blob/master/6_lstm-Problem3.ipynb  
-## requirement
+## requirements
 CUDA 9.0 + Pytorch 1.0
-## run code
+## to run
 ROOT = path/to/this/repo
-- download dataset
+- download the dataset
 ```python
 cd ROOT
 python dataset/download.py
 ```
-- train model
+- training:
 ```
 python main.py
 ```
